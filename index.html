@@ -1,0 +1,265 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   JELAJAH NUSANTARA Adventure
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: url('https://drifttravel.com/wp-content/uploads/2021/08/Picture1.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5rem;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .form-container button {
+            width: 20%;
+            padding: 10px;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color:rgb(255, 47, 47); 
+        }
+
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        .services, .news {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service, .news-item {
+            flex: 1 1 calc(33.333% - 2rem);
+            margin: 1rem;
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .service img, .news-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .service h3, .news-item h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        .service p, .news-item p {
+            font-size: 1rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        footer p {
+            margin: 0;
+        }
+  </style>
+ </head>
+ <body>
+  <nav>
+   <ul>
+    <li>
+     <a href="#home">
+      Home
+     </a>
+    </li>
+    <li>
+     <a href="#services">
+      Services
+     </a>
+    </li>
+    <li>
+     <a href="#news">
+      News
+     </a>
+    </li>
+    <li>
+     <a href="#contact">
+      Contact
+     </a>
+    </li>
+    <li>
+        <a href="login.html">
+         Login
+        </a>
+       </li>
+   </ul>
+  </nav>
+  <header id="home">
+   <h1>
+    Welcome to 
+    <P>JELAJAH NUSANTARA ADVENTURE</P>
+   </h1>
+   <p>
+    Your adventure starts here
+   </p>
+  </header>
+  <section id="services">
+   <h2>
+    Our Services
+   </h2>
+   <div class="services">
+    <div class="service">
+     <img alt="Image of mountain climbing adventure" height="300" src="https://storage.googleapis.com/a1aa/image/K1cCm1jnxCr5FJg9R8eBkhkJ5iO9DngeBqR7JZ6wG4WNYTzTA.jpg" width="400"/>
+     <h3>
+      PT Jelajah Nusantara
+     </h3>
+     <p>
+        
+            PT Jelajah Nusantara adalah perusahaan wisata alam yang beroperasi di Indonesia, menawarkan berbagai pengalaman petualangan seperti pendakian gunung, diving, dan paket wisata lainnya. Dengan fokus pada keselamatan dan kelestarian alam, perusahaan ini menyediakan panduan profesional yang berpengalaman, peralatan pendakian yang lengkap, serta akomodasi yang nyaman untuk para peserta
+            
+    
+      <div class="form-container">
+        <a href="detailperusahaan.html">
+        <button type="submit">Read More 
+             </button>
+            </a>
+     </div>
+     
+     
+    </p>
+
+    </div>
+    <div class="service">
+     <img alt="Image of river rafting adventure" height="300" src="https://storage.googleapis.com/a1aa/image/AtkxGuUmL6b1IpCPsch63FoVgYCMShXyvoGdw5r3fyrHsp5JA.jpg" width="400"/>
+     <h3>
+      River Rafting
+     </h3>
+     <p>
+      Enjoy an exhilarating river rafting adventure on some of the best rivers.
+      <div class="form-container">
+        <a href="login.html">
+        <button type="submit">Read More 
+             </button>
+            </a>
+     </div>
+     
+    </p>
+    </div>
+    <div class="service">
+     <img alt="Image of jungle trekking adventure" height="300" src="https://storage.googleapis.com/a1aa/image/ezJi7U8n9HR0KSRMl1xTBjOTlfRAuM0tS1GLKUxGdi7LYTzTA.jpg" width="400"/>
+     <h3>
+      Jungle Trekking
+     </h3>
+     <p>
+      Explore the dense jungles with our guided trekking tours.
+      <div class="form-container">
+        <a href="login.html">
+        <button type="submit">Read More 
+             </button>
+            </a>
+     </div>
+     </p>
+    </div>
+   </div>
+  </section>
+  <section id="news">
+   <h2>
+    Latest News
+   </h2>
+   <div class="news">
+    <div class="news-item">
+     <img alt="Image of recent mountain climbing event" height="300" src="https://storage.googleapis.com/a1aa/image/8ZlCaT68a25WCNsuNqxeUpGSn98An72xqZHMdLqJyKqDsp5JA.jpg" width="400"/>
+     <h3>
+      Mountain Climbing Event
+     </h3>
+     <p>
+      Join our upcoming mountain climbing event and conquer new heights.
+      <div class="form-container">
+        <a href="login.html">
+        <button type="submit">Read More 
+             </button>
+            </a>
+     </div>
+     </p>
+    </div>
+    <div class="news-item">
+     <img alt="Image of recent river rafting event" height="300" src="https://storage.googleapis.com/a1aa/image/8sxZkdXzjIrSJxnFgk7u7IQ8SwJ96FgUHY3RMTkKh1CC208E.jpg" width="400"/>
+     <h3>
+      River Rafting Event
+     </h3>
+     <p>
+      Don't miss our river rafting event for an unforgettable experience.
+      <div class="form-container">
+        <a href="login.html">
+        <button type="submit">Read More 
+             </button>
+            </a>
+     </div>
+     </p>
+    </div>
+    <div class="news-item">
+     <img alt="Image of recent jungle trekking event" height="300" src="https://storage.googleapis.com/a1aa/image/576MmsKgqJ64I5jcLziH3ql2J3UV3izEDu3rKZZHZnfEsp5JA.jpg" width="400"/>
+     <h3>
+      Jungle Trekking Event
+     </h3>
+     <p>
+      Explore the wilderness in our upcoming jungle trekking event.
+     </p>
+     <div class="form-container">
+        <a href="login.html">
+        <button type="submit">Lihat Layanan Kami 
+             </button>
+            </a>
+     </div>
+     
+
+   </div>
+  </section>
+  <footer id="contact">
+   <p>
+    © 21552011163 HERMAWAN TIF K 21 SOPIAN WEB 1
+   </p>
+  </footer>
+ </body>
+</html>

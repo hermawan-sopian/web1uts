@@ -1,0 +1,206 @@
+<html>
+ <head>
+  <title>
+   Detail - Company Information Website
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            margin-right: 20px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sidebar ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            flex: 1;
+            max-width: 600px;
+        }
+        .info-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .info-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .info-card h2 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .menu-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .menu-icon i {
+            font-size: 24px;
+            color: #fff;
+        }
+        .sidebar {
+            display: none;
+        }
+        .sidebar.active {
+            display: block;
+        }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="menu-icon" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+   </div>
+   <h1>
+    PT JELAJAH NUSANTARA
+   </h1>
+  </header>
+  <nav>
+   <a href="index.html">
+    Home
+   </a>
+   <a href="logout.html">
+    Logout
+   </a>
+  </nav>
+  <div class="container">
+   <div class="sidebar" id="sidebar">
+    <ul>
+     <li>
+      <a href="#overview">
+       Company Overview
+      </a>
+     </li>
+     <li>
+      <a href="#products">
+       Layanan Kami
+      </a>
+     </li>
+     <li>
+        <a href="#team">
+         Our Team
+        </a>
+       </li>
+       
+    </ul>
+   </div>
+   <div class="content">
+    <div class="info-card" id="overview">
+     <img alt="Detailed image of company building with modern architecture" height="400" src="https://storage.googleapis.com/a1aa/image/dwJ5SmkZWxpkPZWeesyKXKQnUjCyQ7hQSTfeWy3P1J7MegaeE.jpg" width="600"/>
+     <h2>
+      Company Overview
+     </h2>
+     <p>
+        PT Jelajah Nusantara adalah perusahaan wisata alam yang beroperasi di Indonesia, menawarkan berbagai pengalaman petualangan seperti pendakian gunung, diving, dan paket wisata lainnya. Dengan fokus pada keselamatan dan kelestarian alam, perusahaan ini menyediakan panduan profesional yang berpengalaman, peralatan pendakian yang lengkap, serta akomodasi yang nyaman untuk para peserta
+
+    </p>
+    </div>
+    <div class="info-card" id="products">
+     <img alt="Detailed image of company team working together in an office" height="400" src="https://storage.googleapis.com/a1aa/image/LCqnuBqqG8p4HFDruvf4b1QV6JbTz2PnW8ODW8n8BYSzDq5JA.jpg" width="600"/>
+     <h2>
+        Layanan Utama
+
+    </h2>
+     <p>
+        Pendakian Gunung: Menyediakan paket pendakian ke berbagai gunung di Indonesia, dengan rute yang disesuaikan untuk berbagai tingkat kemampuan.
+
+Diving: Menawarkan paket diving di lokasi-lokasi terbaik, lengkap dengan instruktur bersertifikat dan peralatan selam.
+
+Paket Wisata Alam: Mengorganisir perjalanan ke destinasi alam lainnya, seperti trekking di hutan, eksplorasi pantai, dan kegiatan outdoor lainnya.
+            </p>
+    </div>
+    
+        <div class="info-card" id="team">
+     <img alt="Detailed image of company products displayed in a showroom" height="400" src="https://storage.googleapis.com/a1aa/image/QVHcQft76MWuS6mQJescOBXJ6tgJgZSGlSC3r8HdT7akHUzTA.jpg" width="600"/>
+     <h2>
+Team     </h2>
+     <p>
+        Panduan Profesional: Semua kegiatan dipandu oleh profesional yang terlatih dan berpengalaman dalam bidangnya.
+
+        Peralatan Berkualitas: Menyediakan peralatan pendakian dan diving yang memenuhi standar keselamatan dan kenyamanan.
+        
+        Pelatihan Keselamatan: Memberikan pelatihan dan briefing keselamatan sebelum kegiatan dimulai untuk memastikan peserta siap dan aman. </p>
+    </div>
+   </div>
+  </div>
+  <footer>
+   <p>
+    © 21552011163 HERMAWAN SOPIAN TIF K 21
+   </p>
+  </footer>
+  <script>
+   function toggleSidebar() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+  </script>
+ </body>
+</html>
